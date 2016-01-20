@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="10" verbose="0" name="Failed suite [Surefire suite]" parallel="methods">
+  <test name="Surefire test(failed)" parallel="methods" preserve-order="true">
+    <classes>
+      <class name="com.gmail.tests.LoginLogOutTest">
+        <methods>
+          <include name="close"/>
+          <include name="setUpLocal"/>
+        </methods>
+      </class>
+      <class name="com.gmail.tests.DeleteEmailTest">
+        <methods>
+          <include name="setUpLocal"/>
+        </methods>
+      </class>
+      <class name="com.gmail.tests.CreateAccountTest">
+        <methods>
+          <include name="setupSelenium"/>
+          <include name="closeSelenium"/>
+        </methods>
+      </class>
+      <class name="com.gmail.tests.VerifyUnreadEmailsTest">
+        <methods>
+          <include name="setUpLocal"/>
+        </methods>
+      </class>
+      <class name="com.gmail.tests.SendEmailTest">
+        <methods>
+          <include name="runSendEmailTest"/>
+          <include name="setUpLocal"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

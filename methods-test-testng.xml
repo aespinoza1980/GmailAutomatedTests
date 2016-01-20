@@ -1,0 +1,33 @@
+<suite name="Test-method Suite" parallel="methods" thread-count="5" >
+    <test name="Test-class test 1">
+        <parameter name="test-name" value="test-method One" />
+        <classes>
+            <class name="com.gmail.tests.CreateAccountTest" />
+        </classes>
+    </test>
+    <test name="Test-class test 2">
+        <parameter name="test-name" value="test-method two" />
+        <classes>
+            <class name="com.gmail.tests.DeleteEmailTest" />
+        </classes>
+    </test>
+    <test name="Test-class test 3">
+        <parameter name="test-name" value="test-method three" />
+        <classes>
+            <class name="com.gmail.tests.LoginLogOutTest" />
+        </classes>
+    </test>
+    <test name="Test-class test 4">
+        <parameter name="test-name" value="test-method four" />
+        <classes>
+            <class name="com.gmail.tests.SendEmailTest" />
+        </classes>
+    </test>
+    <test name="Test-class test 5">
+        <parameter name="test-name" value="test-method five" />
+        <classes>
+            <class name="com.gmail.tests.VerifyUnreadEmailsTest" />
+        </classes>
+    </test>
+
+</suite>
