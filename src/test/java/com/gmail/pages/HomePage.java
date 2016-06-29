@@ -139,7 +139,9 @@ public class HomePage {
         driver.findElement(By.xpath("//div[text()='Send']")).click();
 
 /* Go to Sent Items and verify */
-        driver.findElement(By.xpath("//a[@title='Sent Mail']")).click();
+       // driver.findElement(By.xpath("//a[@title='Sent Mail']")).click();// recent UI changes make this reuqest invalid
+
+
         /*if (driver.findElement(By.xpath("//div[@class='y6']//b[text()='"+subject+"']")) != null)
         {
             System.out.println("Wowww.. Email sent sucessfully!!!");
